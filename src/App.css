@@ -1,0 +1,514 @@
+@font-face {
+    font-family: "ABC Marist Unlicensed Trial Book";
+    src: url("https://framerusercontent.com/assets/sJ2McoPbw06NGXUxSfUOpiYbDw.woff2") format("woff2");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+.about {
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 1.6;
+}
+
+.about p {
+    margin: 0 0 16px;
+}
+
+.about .about-intro {
+    font-size: 20px;
+}
+
+.about-education {
+    margin-top: 48px;
+    padding-top: 32px;
+    border-top: 1px solid #e3e3e3;
+}
+
+.about h2 {
+    margin: 0 0 24px;
+    font-size: 26px;
+    font-weight: 400;
+}
+
+.about h3 {
+    margin: 28px 0 8px;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.about .about-meta {
+    color: #666;
+    font-family: ui-monospace, monospace;
+    font-size: 13px;
+}
+
+.course-list {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px 24px;
+    margin: 12px 0 32px;
+    padding-left: 20px;
+    font-size: 15px;
+}
+
+.course-list li::marker {
+    color: #3563e9;
+}
+
+@media (max-width: 700px) {
+    .course-list {
+        grid-template-columns: 1fr;
+    }
+}
+
+.Header {
+    font-family: "ABC Marist Unlicensed Trial Book", serif;
+    max-width: 720px;
+    margin: 80px auto;
+    padding: 0 24px;
+    color: #393a3d;
+}
+
+.Header h1 {
+    font-size: 32px;
+    font-weight: 400;
+}
+
+.Header p {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.no-bullets {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+
+}
+.no-bullets-exp {
+    list-style-type: none;
+    padding: 10px;
+
+}
+
+
+
+.sideBar {
+    position: fixed;
+    top: 30%;
+    left: 24px;
+    width: 190px;
+    max-height: calc(100vh - 104px);
+    overflow-y: auto;
+}
+
+.sideBar .no-bullets {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.sideBar .no-bullets li {
+    margin: 0;
+}
+
+.sideBar a,
+.sideBar a:visited {
+    display: block;
+    padding: 10px 14px;
+    border-radius: 6px;
+    color: #393a3d;
+    text-decoration: none;
+
+    transition:
+            color 150ms ease,
+            background-color 150ms ease;
+}
+
+.sideBar a:hover {
+    color: #81879c;
+}
+
+.experience {
+    font-size: 17px;
+    line-height: 1.6;
+}
+
+.experience h2 {
+    margin: 0 0 28px;
+    font-size: 26px;
+    font-weight: 400;
+}
+
+.experience h3 {
+    margin: 0 0 6px;
+    font-size: 22px;
+    font-weight: 400;
+}
+
+.experience-title {
+    margin: 0 0 4px;
+}
+
+.experience-meta {
+    margin: 0;
+    color: #666;
+    font-family: ui-monospace, monospace;
+    font-size: 13px;
+}
+
+.experience-list {
+    display: grid;
+    gap: 14px;
+    margin: 24px 0 0;
+    padding-left: 20px;
+}
+
+.experience-list li::marker {
+    color: #3563e9;
+}
+
+.experience-list strong {
+    font-weight: inherit;
+    color: #3563e9;
+}
+
+.projects {
+    font-size: 17px;
+    line-height: 1.6;
+}
+
+.projects h2 {
+    margin: 0 0 32px;
+    font-size: 26px;
+    font-weight: 400;
+}
+
+.project + .project {
+    margin-top: 40px;
+    padding-top: 32px;
+    border-top: 1px solid #e3e3e3;
+}
+
+.project h3 {
+    margin: 0 0 8px;
+    font-size: 22px;
+    font-weight: 400;
+}
+
+.project p {
+    margin: 0 0 16px;
+}
+
+.project .project-context,
+.project .project-tech {
+    font-family: ui-monospace, monospace;
+    font-size: 13px;
+}
+
+.project .project-context {
+    margin-bottom: 8px;
+    color: #3563e9;
+}
+
+.project .project-tech {
+    color: #666;
+}
+
+.project-details {
+    margin-top: 20px;
+}
+
+.project-details summary {
+    width: fit-content;
+    color: #3563e9;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.project-details summary:hover {
+    text-decoration: underline;
+    text-underline-offset: 4px;
+}
+
+.project-details ul {
+    display: grid;
+    gap: 12px;
+    margin: 16px 0 0;
+    padding-left: 20px;
+    font-size: 15px;
+}
+
+.project-details li::marker {
+    color: #3563e9;
+}
+
+.project-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin-top: 20px;
+}
+
+.project-links a {
+    color: #3563e9;
+    text-underline-offset: 4px;
+}
+
+.project-links a:focus-visible,
+.project-details summary:focus-visible {
+    outline: 2px solid #3563e9;
+    outline-offset: 4px;
+}
+
+
+.project-gallery {
+    display: flex;
+    gap: 16px;
+    overflow-x: auto;
+    margin: 24px 0;
+    padding: 16px;
+    background: #f6f5f3;
+    border-radius: 12px;
+}
+
+.project-gallery img {
+    flex-shrink: 0;
+    width: 200px;
+    max-width: 100%;
+    height: auto;
+    align-self: flex-start;
+    border: 1px solid #e3e3e3;
+    border-radius: 8px;
+}
+
+
+
+
+.skills {
+    padding-bottom: 6rem;
+}
+
+.skills-header {
+    max-width: 700px;
+    margin-bottom: 3.5rem;
+}
+
+.skills-header h2 {
+    font-size: 2.8rem;
+    margin-bottom: 1rem;
+}
+
+.skills-header p {
+    line-height: 1.7;
+    opacity: 0.8;
+}
+
+.section-label {
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.16rem;
+    text-transform: uppercase;
+    margin-bottom: 0.75rem;
+}
+
+.skills-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    border-color: rgba(0, 0, 0, 0.12);
+}
+
+.skill-card {
+    display: grid;
+    grid-template-columns: 220px 1fr;
+    gap: 2rem;
+    align-items: start;
+
+    padding: 1.8rem 0;
+    border-color: rgba(0, 0, 0, 0.12);
+
+    transition: padding-left 0.5s ease;
+}
+
+.skill-card:hover {
+    padding-left: 10px;
+}
+
+.skill-card h3 {
+    margin: 0;
+    font-size: 1rem;
+    font-weight: 600;
+    opacity: 0.7;
+}
+
+.skill-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.65rem;
+}
+
+.skill-pill {
+    padding: 0.5rem 0.85rem;
+
+    border-radius: 8px;
+    border: 1px solid rgba(0, 0, 0, 0.14);
+
+    font-size: 0.88rem;
+
+    transition:
+            transform 0.2s ease,
+            background 0.2s ease,
+            border-color 0.2s ease;
+}
+
+.skill-pill:hover {
+    transform: translateY(-2px);
+    background: rgba(255, 255, 255, 0.07);
+    border-color: rgba(255, 255, 255, 0.3);
+}
+
+@media (max-width: 768px) {
+    .skills {
+        padding: 4rem;
+    }
+
+    .skill-card {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .skill-card:hover {
+        padding-left: 0;
+    }
+}
+
+
+
+.experience,
+.projects,
+.involvements,
+.skills,
+.contact {
+    margin-top: 4rem;
+    padding-top: 4rem;
+    border-top: 1px solid #e3e3e3;
+}
+
+
+.contact {
+    margin-top: 4rem;
+    padding: 4rem 0 6rem;
+    border-top: 1px solid rgba(0, 0, 0, 0.12);
+}
+
+.contact-header {
+    max-width: 700px;
+    margin-bottom: 3rem;
+}
+
+.contact-header h2 {
+    font-size: 2.8rem;
+    margin-bottom: 1rem;
+}
+
+.contact-header p {
+    line-height: 1.7;
+    opacity: 0.8;
+}
+
+.contact-links {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    max-width: 800px;
+}
+
+.contact-link {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 1.2rem 1.4rem;
+
+    border: 1px solid rgba(0, 0, 0, 0.12);
+    border-radius: 10px;
+
+    text-decoration: none;
+    color: inherit;
+
+    transition:
+            transform 0.2s ease,
+            border-color 0.2s ease;
+}
+
+.contact-link:hover {
+    transform: translateY(-3px);
+    border-color: rgba(0, 0, 0, 0.35);
+}
+
+@media (max-width: 768px) {
+    .contact-links {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+.sideProfile {
+    position: fixed;
+    top: 20px;
+    left: 24px;
+
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    padding: 10px 14px;
+
+    background: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(10px);
+
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 999px;
+
+    z-index: 1000;
+
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+}
+
+.sideProfile img {
+    width: 42px;
+    height: 42px;
+
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.sideProfileText {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.2;
+}
+
+.sideProfileText strong {
+    font-size: 0.95rem;
+}
+
+.sideProfileText span {
+    font-size: 0.75rem;
+    opacity: 0.6;
+}
+.sideProfileLink {
+    text-decoration: none;
+    color: inherit;
+}
