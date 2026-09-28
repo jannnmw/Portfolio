@@ -1,19 +1,54 @@
-# React + Vite
+# Jan Rojas Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Personal portfolio website showcasing my experiences
 
-Currently, two official plugins are available:
+## Live Portfolio
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+[View the deployed portfolio](https://portfolio-mst59n2b6-jannnmw.vercel.app/)
 
-## React Compiler
+## About
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+This portfolio highlights my background as a CS student at Worcester State University, along with my technical projects, experience, community involvement, and skills.
 
-Note: This will impact Vite dev & build performances.
-You can also try [the experimental native React Compiler support in plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md#rust-react-compiler) by using `compiler: true` in the plugin options instead of using the Babel plugin.
+The site includes projects involving:
 
-## Expanding the ESLint configuration
+- Java and Spring Boot
+- React and JavaScript
+- PostgreSQL and SQLite
+- AWS S3 and Amazon Athena
+- Docker
+- Firebase
+- Android development
+- Data analytics and SQL
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Featured Projects
+
+### DigitalSign
+Electronic-signature platform being developed with React, Java, Spring Boot, PostgreSQL, and AWS.
+
+### MotorMatch
+Android vehicle-matching application using Java, SQLite, Room, SQL filtering, ExecutorService, and device sensors.
+
+### SIREN
+React and Firebase application designed around continuous audio recording, offline buffering, and automatic synchronization.
+
+### Stock Market Analytics Pipeline
+Cloud-based data analytics project using Amazon S3, Athena, SQL, and financial datasets.
+
+## Tech Stack
+
+**Frontend:** React, JavaScript, HTML, CSS  
+**Backend:** Java, Spring Boot  
+**Databases:** PostgreSQL, SQLite  
+**Cloud:** AWS, Amazon S3, Amazon Athena  
+**Tools:** Git, Docker, Maven, Vite, IntelliJ IDEA
+
+## Deployment
+
+This project is deployed using Vercel and connected to this GitHub repository for automatic redeployment after new pushes.
+
+## Contact
+
+- [LinkedIn](https://www.linkedin.com/in/janrojascs/)
+- [GitHub](https://github.com/jannnmw)
+- Email: jrojas3@worcester.edu
