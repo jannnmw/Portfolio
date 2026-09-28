@@ -581,3 +581,24 @@ html {
         font-size: 0.7rem;
     }
 }
+
+@media (max-width: 900px) {
+    .sideBar {
+        display: none;
+    }
+
+    .sideProfile {
+        position: absolute;
+        top: 16px;
+        left: 16px;
+        z-index: 1000;
+    }
+
+    .Header {
+        margin: 0;
+        padding: 110px 20px 40px;
+        max-width: none;
+        width: 100%;
+        box-sizing: border-box;
+    }
+}
