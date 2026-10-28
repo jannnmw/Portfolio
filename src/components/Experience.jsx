@@ -6,17 +6,17 @@ export default function Experience() {
             <h2>Experience</h2>
 
             <article className="experience-role">
-                <header>
-                    <h3>JJEC Transportation</h3>
-                    <p className="experience-title">
-                        IT and Software Development Associate
-                    </p>
-                    <p className="experience-meta">Part-time</p>
-                </header>
+                  <header>
+                      <h3>JJEC Transportation</h3>
+                      <p className="experience-title">
+                          IT and Software Development Associate
+                      </p>
+{/*                       <p className="experience-meta">Part-time</p> */}
+                  </header>
 
                 <ul className="experience-list">
                     <li>
-                        Provide day-to-day IT support, including computer setup,
+                        Provide IT support, including computer setup,
                         business file and user data transfers, and hardware and
                         software troubleshooting.
                     </li>
@@ -38,17 +38,12 @@ export default function Experience() {
                         page layouts and the foundation for an online presence.
                     </li>
 
-                    <li>
-                        Currently developing <strong>DigitalSign</strong>, an
-                        electronic-signature platform for transportation documents
-                        intended to reduce reliance on third-party services.
-                    </li>
-
-                    <li>
-                        Designed DigitalSign’s architecture using React, JavaScript,
-                        Java, Spring Boot REST APIs, and PostgreSQL, with AWS planned
-                        for deployment and document storage.
-                    </li>
+                 <li>
+                     Currently developing <strong>DigitalSign</strong>, an electronic-signature
+                     platform for transportation documents, using React, JavaScript, Java,
+                     Spring Boot REST APIs, and PostgreSQL, with AWS planned for deployment
+                     and document storage to reduce cost and reliance on third-party services.
+                 </li>
                 </ul>
             </article>
         </section>
